@@ -16,6 +16,8 @@ def create_site(apps, schema_editor):
 
 class Migration(migrations.Migration):
 
+    initial = True
+    
     dependencies = [
         ("sites", "0002_alter_domain_unique"),
     ]
